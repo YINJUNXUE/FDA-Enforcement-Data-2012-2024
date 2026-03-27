@@ -1,0 +1,31 @@
+rule_id,product_cat,pattern,rule_note
+P01,Dietary supplements / Sports nutrition,ptype_lower: dietary|supplement,B-0 product_type fallback
+P02,Dietary supplements / Sports nutrition,product_lower: (dietary\s+supplement|\bsupplement\b|capsule|capsules|tablet|caplet|softgel|gummy|nootropic|vitamin|mineral|ndc\b|pre\-?workout|protein\s+powder),B-0 product_description fallback
+P03,Seafood / Fish,(fish|salmon|tuna|shrimp|prawn|crab|lobster|oyster|clam|mussel|scallop|seafood),B-1 main product_dict
+P04,Meat / Poultry,(beef|pork|chicken|turkey|ham|sausage|bacon|meat|poultry|jerky),B-1 main product_dict
+P05,Dairy / Dairy-derived,(milk|cheese|yogurt|dairy|whey|casein|butter|cream|ice\s*cream),B-1 main product_dict
+P06,Egg products,(\begg\b|\beggs\b|liquid\s+egg|egg\s+product),B-1 main product_dict
+P07,Produce (fresh / leafy greens),(lettuce|romaine|spinach|kale|salad|produce|vegetable|fruit|fresh\-cut),B-1 main product_dict
+P08,Frozen foods,(\bfrozen\b|freezer|frozen\s+meal|frozen\s+vegetable|frozen\s+fruit),B-1 main product_dict
+P09,Bakery / Bread / Flour,(bread|bakery|bun|roll|bagel|muffin|tortilla|flour|batter|dough),B-1 main product_dict
+P10,Grains / Rice / Pasta / Noodles,(rice|pasta|noodle|noodles|macaroni|spaghetti|cereal|oat|oatmeal|grain\b),B-1 main product_dict
+P11,Ready-to-eat / Prepared foods,(ready\s*to\s*eat|\brte\b|prepared|meal\b|deli|sandwich|wrap|sushi|entree|bowl\b),B-1 main product_dict
+P12,Snacks / Chips / Crackers,(snack|chips|crisps|cracker|popcorn|pretzel),B-1 main product_dict
+P13,Confectionery / Chocolate,(chocolate|candy|confection|gummy|marshmallow|toffee|caramel),B-1 main product_dict
+P14,Nuts / Seeds,(\bnut\b|\bnuts\b|almond|cashew|walnut|pecan|hazelnut|pistachio|seed|sesame),B-1 main product_dict
+P15,Beverages,(juice|drink|beverage|tea|coffee|water|soda|cola|kombucha),B-1 main product_dict
+P16,Sauces / Condiments / Dips,(sauce|condiment|dressing|ketchup|mustard|mayonnaise|mayo\b|salsa|hummus|tahini|dip|spread|pesto|gravy|marinade|soy\s+sauce|hot\s+sauce),B-1 main product_dict
+P17,Spices / Seasonings / Herbs,(spice|seasoning|herb|pepper|cumin|paprika|turmeric|garlic\s+powder|onion\s+powder),B-1 main product_dict
+P18,Soups / Broths,(soup|broth|stock\b|bouillon),B-1 main product_dict
+P19,Infant food / Baby formula,(infant|baby\s+food|formula),B-1 main product_dict
+P20,Plant-based / Legumes,(bean|beans|lentil|chickpea|legume|tofu|plant\s+based|vegan),B-1 main product_dict
+P21,Ingredients / Additives,(ingredient|additive|stabilizer|emulsifier|thickener|flavor|flavour|color|colour),B-1 main product_dict
+P22,Pet food,(pet\s+food|dog\s+food|cat\s+food),B-1 main product_dict
+P23,Frozen desserts / Ice cream,(ice\s*cream|gelato|sorbet|frozen\s+dessert|popsicle|ice\s+pop),B-2 v2 add-on
+P24,Baked sweets / Pastries,(pastry|pie\b|tart\b|croissant|donut|doughnut|brownie|cupcake|cheesecake|pudding),B-2 v2 add-on
+P25,Oils / Fats / Spreads,(\boil\b|olive\s+oil|canola|sunflower|soybean\s+oil|coconut\s+oil|shortening|lard|ghee|margarine),B-2 v2 add-on
+P26,Dairy / Dairy-derived,(feta|paneer|queso\s*(fresco|blanco)?|mozzarella|ricotta|brie|cotija|marcellin|ricotta\s+salata|queso\s+fresco|queso\s+blanco|half\s*&\s*half|\bcream\b|kefir|buttermilk),B-3 v3 targeted fill
+P27,Produce (fresh / leafy greens),(tomato|tomatoes|roma\s+tomatoes|mango|mangos|grape|grapes|apple|apples|pear|pears|asparagus|parsley|cantaloupe|honeydew|pineapple|strawberry|blueberry|berries|onion|cilantro),B-4 v3 targeted fill
+P28,Ingredients / Additives,(enzyme|xylanase|pectinase|amylase|protease|lipase|\bstarch\b|food\s+starch|protein\s+isolate|soy\s+protein\s+isolate|calcium\s+chloride|processing\s+aid),B-5 v3 targeted fill
+P29,Baked sweets / Pastries,(danish|donettes|waffle|turnover|crumb\s+cake|mug\s+cake|shortcake|baguette|biscuit|loaf),B-6 v3 targeted fill
+P30,Ingredients / Additives,(\bsugar\b|syrup|honey|molasses|sucrose|sweetener|corn\s+syrup),B-7 v3 sweeteners -> Ingredients

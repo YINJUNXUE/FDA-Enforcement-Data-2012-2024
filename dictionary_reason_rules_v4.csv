@@ -1,0 +1,12 @@
+rule_id,reason_cat,pattern
+R01,Undeclared allergen,(undeclared|not\s+declared|allergen|contains\s+\w+\s+not\s+declared|milk|egg|wheat|soy|peanut|tree\s*nuts|almond|cashew|walnut|pecan|hazelnut|sesame|fish|shellfish|gluten)
+R02,Bacterial pathogen contamination,(salmonella|listeria|monocytogenes|e\s*\.?\s*coli|escherichia|o157|stec|shiga|campylobacter|vibrio|cronobacter)
+R03,Viral contamination,(norovirus|hepatitis\s*a)
+R04,Microbial toxin / spore-forming contamination,(clostridium|botul|staphylococcus|bacillus\s*cereus)
+R05,Foreign material,(foreign\s+material|extraneous|metal|glass|plastic|rubber|wood|stone|fragment|piece\s+of\s+\w+)
+R06,Chemical contamination / Toxins / Adulteration,(lead|mercury|arsenic|cadmium|pesticide|residue|aflatoxin|patulin|histamine|sulfite|sulphite|chemical|toxin|adulterat|unauthorized\s+ingredient)
+R07,Labeling / Misbranding (non-allergen),(misbrand|mislabel|incorrect\s+label|wrong\s+label|labeling\s+error|net\s+weight|best\s+by|use\s+by|expiration|date\s+code|lot\s+code|not\s+listed\s+on\s+label)
+R08,Temperature control / Storage deviation,(temperature\s+abuse|not\s+held\s+at\s+appropriate\s+temperature|refrigerat|frozen\s+temperature|cold\s+chain|thaw|storage\s+deviation)
+R09,Regulatory / GMP / Process deviation,(cgmp|gmp|haccp|insanitary|filthy|process\s+deviation|unapproved|not\s+processed|lack\s+process|lacf|acidified|low\s+acid)
+R10,Packaging / Container defect,(packaging\s+defect|container\s+defect|seal|leak|swollen|bulging|broken\s+seal|glass\s+jar\s+breakage)
+R11,Spoilage / Quality defect,(mold|mould|yeast|spoil|spoiled|decomposed|rancid|off\s*odor|quality\s+issue|organoleptic)
